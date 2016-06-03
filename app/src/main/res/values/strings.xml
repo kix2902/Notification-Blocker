@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name" translatable="false">Notification Blocker</string>
+    <string name="description_app_icon">app icon</string>
+    <string name="description_empty">no data</string>
+    <string name="snackbar_not_allowed_title">You must allow Notification Blocker to read your notifications</string>
+    <string name="snackbar_not_allowed_action">Allow</string>
+    <string name="menu_enable_title">Enable</string>
+</resources>

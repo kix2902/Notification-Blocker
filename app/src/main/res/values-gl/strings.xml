@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="description_app_icon">icono aplicación</string>
+    <string name="description_empty">sen datos</string>
+    <string name="menu_enable_title">Activar</string>
+    <string name="snackbar_not_allowed_action">Permitir</string>
+    <string name="snackbar_not_allowed_title">Debes permitir que Notification Blocker poida ler as túas notificacións</string>
+</resources>

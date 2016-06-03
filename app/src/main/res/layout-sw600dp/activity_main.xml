@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_toolbar"/>
+
+    <SearchView
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:iconifiedByDefault="false"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_apps"
+        android:layout_width="480dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible"
+        android:elevation="8dp"
+        android:background="@android:color/white"
+        tools:ignore="UnusedAttribute"/>
+
+    <ImageView
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty_shadow"
+        android:visibility="gone"
+        android:contentDescription="@string/description_empty"/>
+
+</LinearLayout>
