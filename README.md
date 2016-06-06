@@ -2,7 +2,7 @@
 
 Sample app using Android's NotificationListenerService class available on Android 4.3+ to receive notifications sent to the status bar
 
-[![Get it on Google Play](https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png)](https://play.google.com/store/apps/details?id=com.redinput.notifblock)
+<a href='https://play.google.com/store/apps/details?id=com.redinput.notifblock'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width='200'/></a>
 
 
 
