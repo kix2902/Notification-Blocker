@@ -9,12 +9,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.provider.Settings;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.SwitchCompat;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -22,6 +16,14 @@ import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.SearchView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SwitchCompat;
+import androidx.appcompat.widget.Toolbar;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -48,17 +50,17 @@ public class MainActivity extends AppCompatActivity implements OnCheckboxAppChec
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        empty = (ImageView) findViewById(R.id.empty);
+        empty = findViewById(R.id.empty);
 
-        searchView = (SearchView) findViewById(R.id.search);
+        searchView = findViewById(R.id.search);
         if (searchView != null) {
             searchView.setOnQueryTextListener(this);
         }
 
-        recyclerView = (RecyclerView) findViewById(R.id.recycler_apps);
+        recyclerView = findViewById(R.id.recycler_apps);
         if (recyclerView != null) {
             recyclerView.setHasFixedSize(true);
             recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
@@ -145,7 +147,7 @@ public class MainActivity extends AppCompatActivity implements OnCheckboxAppChec
         getMenuInflater().inflate(R.menu.activity_main, menu);
         MenuItem item = menu.findItem(R.id.action_switch);
         if (item != null) {
-            SwitchCompat action_bar_switch = (SwitchCompat) item.getActionView().findViewById(R.id.action_switch);
+            SwitchCompat action_bar_switch = item.getActionView().findViewById(R.id.action_switch);
             if (action_bar_switch != null) {
                 if (hasAccessGranted()) {
                     action_bar_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {

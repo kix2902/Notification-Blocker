@@ -5,7 +5,6 @@ import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.preference.PreferenceManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -30,9 +31,9 @@ public class AppsAdapter extends RecyclerView.Adapter<AppsAdapter.AppsViewHolder
             super(itemView);
 
             this.listener = listener;
-            icon = (ImageView) itemView.findViewById(R.id.app_icon);
-            name = (TextView) itemView.findViewById(R.id.app_name);
-            hide = (CheckBox) itemView.findViewById(R.id.app_hide);
+            icon = itemView.findViewById(R.id.app_icon);
+            name = itemView.findViewById(R.id.app_name);
+            hide = itemView.findViewById(R.id.app_hide);
 
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override

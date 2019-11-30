@@ -7,6 +7,7 @@
         android:name="android.hardware.touchscreen"
         android:required="false"/>
 
+
     <application
         android:fullBackupContent="true"
         android:allowBackup="true"
