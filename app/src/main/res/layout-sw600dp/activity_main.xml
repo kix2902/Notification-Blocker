@@ -15,8 +15,8 @@
         android:iconifiedByDefault="false"
         android:visibility="gone"/>
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recycler_apps"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
         android:layout_width="480dp"
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal"
